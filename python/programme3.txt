@@ -1,0 +1,23 @@
+49 70     	# IN  en 70  Demande un input et le store en mem 70
+40 70     	# Charge la valeur de mem 70 dans l'accu
+48 71     	# STORE valeur de l'accu en mem 71
+48 72     	# STORE valeur de l'accu en mem 72
+
+00 00		# Charger 00 dans accumulateur
+48 73      	# STORE valeur de l'accu en mem 73
+41 73
+40 71      	# Charge la valeur de mem 71 dans l'accu
+12 15    	# Verifie que la valeur accu  == 0. Si oui, saute a l'adresse 88  
+21 01    	# SUB 01 - Retire 1 a la valeur de l'accu 
+48 71     	# STORE valeur de l'accu en mem 71 
+41 71		# Affiche 71 (pour verif)
+40 73     	# Charge la valeur de mem 73 dans l'accu 
+60 72      	# Ajoute 72 a la valeur de l'accu
+48 73     	# STORE valeur de l'accu en mem 73
+41 72		# affiche 72 (pour verif)
+10 08   	# Saute a l'adresse 78 sans condition
+40 73   	# Charge la valeur de mem 73 dans l'accu
+41 73		# Affiche 73
+48 71   	# STORE valeur de l'accu en mem 71
+41 71		# Affiche 71
+10 00   	# Saute a l'adresse 00 sans condition

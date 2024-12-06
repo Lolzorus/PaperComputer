@@ -1,0 +1,19 @@
+49 0x31     	# IN en 31
+40 0x31		# Charge 31 dans accu
+48 0x33		# Charge valeur accu en 33
+
+49 0x32     	# IN en 32 
+40 0x32		# Charge 32 dans accu
+
+21 0x01		# Soustraction de 1 a valeur accu
+12 0x15		# Saut si valeur accu = 0
+48 0x32		# Charge valeur accu dans 32
+41 0x32		# Affiche valeur 32 (pour verif)
+
+40 0x31		# Charge valeur 31 dans accu
+60 0x33		# Ajoute valeur de 33 a valeur accu
+48 0x31		# Charge valeur accu en 31
+41 0x31		# Affiche valeur 31 (pour verif)
+10 0x06		# Loop en etape 3
+
+FF 0x00     	# Arret
