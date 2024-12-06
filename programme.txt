@@ -1,0 +1,21 @@
+49 0x31 #input valeur en 31
+40 0x31	#charge valeur de 31 dans l'accu
+48 0x33 #charge valeur de l'accu en 33
+
+49 0x32	#input valeur en 32
+40 0x32	#charge valeur 32 dans l'accu
+
+#boucle de soustraction
+21 0x01 #soustraction de 1 a valeur accu
+12 0x20 #saut si valeur en accu == 0
+48 0x32	#charge valeur accu dans 32
+
+
+#boucle d'addition
+40 0x31	#charge valeur de 31 dans l'accu
+60 0x33	#ajoute valeur de 33 a valeur accu
+48 0x31	#charge valeur accu en 31
+
+10 0x08 #loop sans condition etape 6
+41 0x31	#affiche valeur 31
+FF 0x00 #arret
